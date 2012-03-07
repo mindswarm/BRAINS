@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Echoes CSS HTML Template Help guide</title>
+
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+    <!-- Import fancy-type plugin for the sample page. -->
+    <link rel="stylesheet" href="plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="scripts/shBrushCSharp.js"></script>
+	<script type="text/javascript" src="scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="scripts/shBrushDelphi.js"></script>
+	<script type="text/javascript" src="scripts/shBrushDiff.js"></script>
+	<script type="text/javascript" src="scripts/shBrushGroovy.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+	<script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+	<script type="text/javascript" src="scripts/shBrushPython.js"></script>
+	<script type="text/javascript" src="scripts/shBrushRuby.js"></script>
+	<script type="text/javascript" src="scripts/shBrushScala.js"></script>
+	<script type="text/javascript" src="scripts/shBrushSql.js"></script>
+	<script type="text/javascript" src="scripts/shBrushVb.js"></script>
+	<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+	<link type="text/css" rel="stylesheet" href="styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/shThemeDefault.css"/>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>&nbsp;</h1>
+	  <a href="http://themeforest.net/user/imaginem"><img  align="right" src="images/logo.gif" alt="Logo"></a>
+	  <h1 align="left"><strong>Echoes <br/><small>Premium CSS HTML Template</small></strong><br/><br/> Help guide</h1>
+<hr>
+      <h2 class="alt">Thank you for purchasing Echoes CSS HTML.</h2>
+      <hr>
+      <hr>
+      <hr class="space">
+      <div class="span-15 prepend-1 colborder">
+	  <a href="http://themeforest.net/user/imaginem"><img src="images/echoestheme.jpg" alt="Echoes preview"></a>
+        <p class="box">
+		<a href="http://themeforest.net/user/imaginem/"><img align="right" src="images/imaginem.jpg" alt="imaginem"></a>
+		Created: 10th February 2010 <br>
+        By: Mondre Contact : <a href="http://themeforest.net/user/imaginem">http://themeforest.net/user/imaginem</a><br/>
+		HTML CSS Premium Template By: Mondre <a href="http://blog.imaginemthemes.com">blog.imaginemthemes.com</a><br/>
+		Themeforest Portfolio: <a href="http://themeforest.net/user/imaginem/portfolio">http://themeforest.net/user/imaginem/portfolio</a><br/>
+        <br>
+		<br/>
+		If you have any questions that are beyond the scope of this help file, please feel free to email, via my user page contact form  at <a href="http://themeforest.net/user/imaginem">http://themeforest.net/user/imaginem</a><br/>
+		<br/>Thank you! </p>
+<p>&nbsp;</p>
+<h2><a name="1"></a>1. About the Echoes Template</h2>
+        <p>This theme is a fixed layout with two columns, except the mainpage  and portfolio page which uses the whole page to display contents.</p>
+        <ol>
+          <li>The header is within “header” div</li>
+          <li>Menu is within smoothmenu1div</li>
+          <li>All of the information within the main content area is nested within a div with an id of "contents".</li>
+          <li>The sidebar's (column #2) content is within a div with an id of "sidebar".</li>
+          <li>Footer is within “footer” div</li>
+        </ol>
+        <p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:        </p>
+        <pre class="brush: c-sharp;">#contents { color: #someColor; }</pre>
+<p>If you find that your new style is not overriding, it is most likely  because of a specificity problem. Scroll down in your CSS file and make  sure that there isn't a similar style that has more weight.</p>
+<pre class="brush: c-sharp;">#contents .posttitle { color: #someColor; }</pre></p>
+        <h2><br>
+        <a name="2"></a>2. Fonts, icons and plug-ins in use</h2>
+		
+Mainpage Icons by Kailoon<br/>
+<a href="http://kailoon.com/free-vector-icons-set-twitter-birdy-icon/">http://kailoon.com/free-vector-icons-set-twitter-birdy-icon/</a>
+<br/><br/>
+MUSEO font used for Cufon<br>		  
+<a href="http://www.josbuivenga.demon.nl/museo.html">http://www.josbuivenga.demon.nl/museo.html</a>
+<br/><br/>	  
+
+jQuery Loopslider for Featured slides and Page Slides(included)<br>
+<a href="http://nathansearles.com/loopedslider/">http://nathansearles.com/loopedslider/</a><br>
+<br/>
+Kwicks Accordion Slider (included)<br>
+<a href="http://www.jeremymartin.name/projects.php?project=kwicks">http://www.jeremymartin.name/projects.php?project=kwicks</a><br>
+<br/>
+ColoBox Lightbox script (included)<br>
+<a href="http://colorpowered.com/colorbox/">http://colorpowered.com/colorbox/</a></p>
+		  
+		<p>&nbsp; </p>
+        <h2><a name="3"></a>3. Cufon Fonts </h2>
+        <p>Cufon font replacements is called in each file<br>
+          Each HTML file has an included JS file with font classes to replace. You'll find the file in the JS directory fontconfig.js<br/>Make changes to it as you prefer. Its straightforward with the class or ID style that need to be replaced with the cufon font.</p>
+        <p><br>		  
+		  
+        <p>&nbsp; </p>
+        <h2><a name="4"></a>4. Customize  Logo </h2>
+        <p>Replace the logo in the images folder called “logo.png” <br>
+          If you need to edit the name of the logo with your own then you can edit each html - search for the term logo and replace the filename </p>
+        <p><br>
+        <pre class="brush: c-sharp;">
+<div id="logo">
+	<a href="index.html">
+		<img src="images/logo.png" alt="logo" />
+	</a>
+</div>
+		</pre>
+        </p>
+<p>&nbsp;</p>
+        <h2><a name="5"></a>5. Setting up the Menu</h2>
+        <p>To setup the menu find the HTML with the div “smoothmenu1”, it’s an unordered list.<br>
+          <br>
+        </p>
+		<p>
+<h3>Dependent CSS and JS files.</h3>
+<ol>
+<li>ddsmoothmenu.css (CSS)</li>
+<li>ddsmoothmenu.js (JS)</li>
+</ol>
+</p>
+        <p>&nbsp;</p>
+        <p><pre class="brush: c-sharp;">
+			<div id="smoothmenu1" class="ddsmoothmenu"><!-- The Menu -->
+				<ul>
+					<!-- Menu Item Start-->
+					<li><a href="index.html">Home</a>
+						<!-- Dropdown menu -->
+						<ul>
+							<!-- Dropdown Items -->
+							<li><a href="index.html">Accordion Slides</a></li>
+							<li><a href="index-jqfancy.html">jQfancy Slides</a></li>
+							<li><a href="index-slider.html">Scroll Slides</a></li>
+						</ul>
+						<!-- Dropdown end -->
+					</li>
+					<!-- Menu Item End -->
+					<li><a href="page.html">About</a>
+						<ul>
+							<li><a href="page.html">Elements Page</a></li>
+							<li><a href="page-slides.html">Page with Slides</a></li>
+							<li><a href="fullwidth.html">Fullwidth Page</a></li>
+							<li><a href="fullwidth-pageslides.html">Fullwidth Slides</a></li>
+							<li><a href="page.html">Company</a>
+							<ul>
+								<li><a href="page.html">History</a></li>
+								<li><a href="page.html">Profile</a></li>
+							</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="portfolio-category.html">Portfolio</a>
+						<ul>
+							<li><a href="portfolio-category.html">Portfolio Categories</a></li>
+							<li><a href="portfolio-items.html">Portfolio Items</a></li>
+							<li><a href="portfolio-carousel.html">Portfolio with Carousel</a></li>
+							<li><a href="portfolio-recent.html">Portfolio with Recent</a></li>
+							<li><a href="portfolio-gallery.html">Portfolio with Gallery</a></li>
+							<li><a href="portfolio-galleryset.html">Portfolio Gallery Set</a></li>
+							<li><a href="fullwidth-portfolioslides.html">Fullwidth Portfolio Slides</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Skins</a>
+						<ul>
+							<li><a href="../echoes-classic/index.html">Echoes Classic</a></li>
+							<li><a href="../echoes-shade/index.html">Echoes Shade</a></li>
+							<li><a href="../echoes-yellow/index.html">Echoes Yellow</a></li>
+							<li><a href="../echoes-brown/index.html">Echoes Brown</a></li>
+							<li><a href="../echoes-blue/index.html">Echoes Blue</a></li>
+							<li><a href="../echoes-red/index.html">Echoes Red</a></li>
+							<li><a href="../echoes-green/index.html">Echoes Green</a></li>
+							<li><a href="../echoes-dark/index.html">Echoes Dark</a></li>
+							<li><a href="../echoes-dark-blue/index.html">Echoes Dark - Blue</a></li>
+							<li><a href="../echoes-dark-red/index.html">Echoes Dark - Red</a></li>
+							<li><a href="../echoes-dark-green/index.html">Echoes Dark - Green</a></li>
+						</ul>
+					</li>
+					<!-- Menu Single Item -->
+					<li><a href="page.html">Services</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+				<br style="clear: left" />
+			</div>
+			<!-- End of Menu -->
+</pre> </p>
+
+<p>&nbsp;</p>
+        <h3>
+          Customizing the menu.
+        </h3><br>
+        <p>If you want to add a menu item just insert an LI tag into it.<br>
+          <br>
+        eg.</p>
+        
+<pre class="brush: c-sharp;">
+<li>
+	<a href="linkpath">Category Name</a>
+</li>
+</pre>
+
+
+        <p><br>
+        If you want sub categories the structure should be as follows.</p>
+
+<pre class="brush: c-sharp;">		
+<li><a href="linkpath">Category Name</a>
+     <ul>
+           <li><a href="linkpath">Sub cat 1</a></li>
+           <li><a href="linkpath">Sub cat 2</a></li>
+     </ul>
+</li>
+</pre>
+
+		
+		
+        <p>          <br>
+        </p>
+        <h3>If arrows don't appear where subcategories exist then </h3>
+<p><br>
+  a. Edit ddsmoothmenu.js in the JS Directory <br>
+  b. Line 19 <br>
+  c. Specify the URL to the arrows in the images directory. (right.gif / down.gif) <br>
+  d. What you have to change there most likely would be the theme name if it has changed.</p>
+        <p>&nbsp;</p>
+        <p><pre class="brush: c-sharp;">//Specify full URL to down and right arrow images (23 is padding-right added to top level LIs with drop downs):
+arrowimages: {down:['downarrowclass', 'images/down.gif', 23], right:['rightarrowclass', 'images/right.gif']},</pre></p>
+
+
+		<br/>
+
+
+<br/>
+
+<h2><a name="6"></a>6. The Mainpage Accordion Slides (featured option)</h2>
+
+<p>
+<h3>Dependent CSS and JS files.</h3>
+
+<p>
+<ol>
+<li>kwicks.css</li>
+<li>jquery.easing.1.3.js</li>
+<li>jquery.kwicks-1.5.1.pack.js</li>
+<li>kwicks-custom.js</li>
+</ol>
+</p>
+
+<p>Edit <strong>index.html</strong> file lines between 125 and 227 and customize the image urls as you require.</p>
+
+<pre class="brush: c-sharp;">		
+		<!-- Featured Block -->
+		<div class="container">
+			<ul class="kwicks horizontal" >
+				<!-- Item One -->
+				<li id="kwickblock1">
+					<div>
+						<!-- Dropshadow PNG thorugh CSS -->
+						<div class="kwickshadow"> </div>
+						<!-- Featured Image one -->
+						<a href="#"><img class="slideimage" src="images/accordion/image1.jpg" alt="First Image" /></a>
+						<!-- Mini Caption when slide closed -->
+						<p class="slide-minicaption">
+							<span class="slide-minicaptiontitle">
+								Three featured homepages
+							</span>
+						</p>
+						
+						<!-- Big Caption on Hover -->
+						<p class="slidecaption">
+							<span class="slidecaptiontitle">
+								<a href="#">Three featured homepages</a>
+							</span>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+						</p>
+						
+					</div>
+				</li>
+				<!-- Item End -->
+				<!-- Item Start - Refer to first item for explanation -->
+				<li id="kwickblock2">
+					<div>
+						<div class="kwickshadow"> </div>
+					
+						<a href="#"><img class="slideimage" src="images/accordion/image2.jpg" alt="Second Image" /></a>
+						
+						<p class="slide-minicaption">
+							<span class="slide-minicaptiontitle">
+								Four content templates
+							</span>
+						</p>
+						
+						
+						<p class="slidecaption">
+							<span class="slidecaptiontitle">
+								<a href="#">Four content templates</a>
+							</span>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+						</p>
+					
+					</div>
+				</li>
+				<!-- Item End -->
+				<!-- Item Start - Refer to first item for explanation -->
+				<li id="kwickblock3">
+					<div>
+						<div class="kwickshadow"> </div>
+					
+						<a href="#"><img class="slideimage" src="images/accordion/image3.jpg" alt="Third Image" /></a>
+					
+						<p class="slide-minicaption">
+							<span class="slide-minicaptiontitle">
+								Seven portfolio templates
+							</span>
+						</p>
+						
+						
+						<p class="slidecaption">
+							<span class="slidecaptiontitle">
+								<a href="#">Seven portfolio templates</a>
+							</span>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+						</p>
+						
+					</div>
+				</li>
+				<!-- Item End -->
+				<!-- Item Start - Refer to first item for explanation -->
+				<li id="kwickblock4">
+					<div>
+					
+						<a href="#"><img class="slideimage" src="images/accordion/image4.jpg" alt="Fourth Image" /></a>
+						
+						<p class="slide-minicaption">
+							<span class="slide-minicaptiontitle">
+								Various content objects
+							</span>
+						</p>
+											
+						<p class="slidecaption">
+							<span class="slidecaptiontitle">
+								<a href="#">Various content objects</a>
+							</span>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+						</p>
+						
+					</div>
+				</li>
+				<!-- Item End -->
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+		<!-- End of Featured Block -->
+</pre>
+<br/>
+<p>
+<ol>
+<li>The initializing script is in the kwicks-custom.js which is called once all the images are loaded.</li>
+<br/>
+	<pre class="brush: c-sharp;">
+		$('.kwicks').kwicks({
+			max : 850,
+			spacing : 0
+		});
+	</pre>
+<br/>
+</ol>
+<br/><br/>
+
+<h2><a name="7"></a>7. The Mainpage JQFancy Slideshow (featured option)</h2>
+<p>
+<h3>Dependent CSS and JS files.</h3>
+<ol>
+<li>fancytrans.css</li>
+<li>jqFancyTransitions.1.7.min.js (Main JS)</li>
+</ol>
+</p>
+<p>
+<br/><br/>
+To Customize edit the <strong>index-jqfancy.html</strong> between lines 127 and 141
+<br/>
+
+<pre class="brush: c-sharp;">
+		<div class="container">
+			<div id="slideshowHolder">
+				<img src="images/featured/image1.jpg" alt="First" />
+				<a href ='#'></a>
+				
+				<img src="images/featured/image2.jpg" alt="Second" />
+				<a href ='#'></a>
+				
+				<img src="images/featured/image3.jpg" alt="Third" />
+				<a href ='#'></a>
+				
+				<img src="images/featured/image4.jpg" alt="Fourth" />
+				<a href ='#'></a>
+			</div>
+		</div>
+</pre>
+<br/>
+
+<br/>
+<p>The initializing script is included at the bottom of the HTML page line 397 called jfancy-custom.js
+<pre class="brush: c-sharp;">
+		$('#slideshowHolder').jqFancyTransitions({
+			effect: 'wave',
+			'navigation' : true,
+			'links' : true,
+			strips: 20,
+			stripDelay: 60,
+			direction: 'random',
+			width: 940, 
+			height: 474 
+		});
+</pre>
+<br/>
+</p>
+
+<br/><br/>
+
+<h2><a name="8"></a>8. The Mainpage Scroll Slides (featured option)</h2>
+<p>
+<h3>Dependent CSS and JS files.</h3>
+<ol>
+<li>slider.css (CSS)</li>
+<li>loopedslider.min.js (JS)</li>
+<li>loopslider-custom.js (JS)</li>
+</ol>
+</p>
+<p>It loads the images one by one from an unordered list and displays the images. Just add another line between the Block Start and Block End
+<br/>
+<br/>
+<p><br/><strong>Featured Images</strong></p>
+<pre class="brush: c-sharp;">
+		<!-- Featured Block -->
+		<div class="slideshowgallery">
+			<div id="loopedSlider">	
+				<div class="container">
+					<div class="slides">
+						<!-- Block Start -->
+						<div>
+							<!-- Image -->
+							<a href="#"><img class="loopslide" src="images/featured/image1.jpg" alt="First Image" /></a>
+							<!-- Caption Title and Description-->
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Cross browser compatible</a>
+								</span>
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="images/featured/image2.jpg" alt="Second Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Three featured homepages</a>
+								</span>
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+							</p>
+						
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="images/featured/image3.jpg" alt="Third Image" /></a>
+						
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Seven portfolio templates</a>
+								</span>
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="images/featured/image4.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Various content objects</a>
+								</span>
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, nibh ut feugiat placerat, orci lacus accumsan erat, eget porttitor arcu velit a lacus.</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+					</div>
+
+				</div>
+				<!-- Featured Arrows -->
+				<a href="#" class="previous"><img src="images/slider/previous.png" alt="Previous" /></a>
+				<a href="#" class="next"><img src="images/slider/next.png" alt="Next" /></a>
+				<!-- Featured Pagination -->
+				<!-- 
+				To equip more than Six pagination points Edit the slider.css in the CSS folder
+				Locate ul.pagination
+				And increase the pixel width to center the pagination with the image
+				-->
+	
+			</div>
+		</div>
+</pre>
+<br/>
+<p>The initializing script is included inside loopslider-custom.js
+<pre class="brush: c-sharp;">
+	$('#loopedSlider').loopedSlider({
+		addPagination: true,
+		containerClick: false,
+		autoStart: 8000
+	});
+</pre>
+<br/>
+<br/>
+
+<h2><a name="9"></a>9. Portfolio Page</h2>
+<br/>
+<p>To add a IMAGE portfolio box.</p>
+
+<pre class="brush: c-sharp;">
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobg"><!-- Portfolio Block Two -->
+					<a rel="echoeslightbox" href="images/portfolio/bigimage.jpg">
+						<img class="fade" src="images/portfolio/portfolio2.jpg" alt="Portfolio" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear"><a href="#">Lorem ipsum dolor sit</a></div>
+				<div class="portfoliocontents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur.</div>
+			</div>
+</pre>
+
+<br /><br />
+<p>To add a VIDEO portfolio box.</p>
+
+<pre class="brush: c-sharp;">
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobgvideo"><!-- Portfolio Block Three -->
+					<a rel="echoeslightbox" href="images/portfolio/bigimage.jpg">
+						<img class="fade" src="images/portfolio/portfolio3.jpg" alt="Portfolio" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear"><a href="#">Lorem ipsum dolor sit</a></div>
+				<div class="portfoliocontents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur.</div>
+			</div>
+</pre>
+
+<br/>
+<p>
+Notice Images and Videos have different mportfolio classes. For image it's mportfoliobg and for video it's mportfoliobgvideo
+</p><br/><br/>
+
+<h2><a name="10"></a>10. LightBox</h2>
+<p>To Add a Lightbox include as follows ( rel="echoeslightbox") The class fade will activate fade on hover</p>
+<pre class="brush: c-sharp;">
+		<a rel="echoeslightbox" href="images/portfolio/bigimage.jpg">
+			<img class="fade" src="images/portfolio/portfolio3.jpg" alt="Portfolio" />
+		</a>
+</pre>
+<br/>
+<p>
+For more information on addition video and image lightbox please refer to Prettyphoto Lightbox plugin homepage.
+</p>
+<a href="http://colorpowered.com/colorbox/">http://colorpowered.com/colorbox/</a>
+<br/><br/><br/>
+
+<h2><a name="11"></a>11. Contact Page</h2>
+<br/>
+<p>
+Edit Contact.php file Line 48 Enter your email address where it’s marked youremail@yoursite.com
+<br />
+<pre class="brush: c-sharp;">
+			//Fill the following line with your email address
+			$emailTo = 'youremail@mail.com';
+</pre>
+
+<br/><br/>
+<h2><a name="12"></a>12. Footer</h2>
+<br/>
+Replace between the DIV named “footer”
+<br/><br/><br/>
+<h2><a name="13"></a>13. Javascripts in use</h2>
+<ol>
+	<li>jQuery library</li>
+	<li>Custom JS scripts</li>
+	<li>ColorBox</li>
+	<li>jQuery Loopslider</li>
+	<li>jQuery Kwicks</li>
+	<li>jQuery JQFancy</li>
+	<li>jQuery Carousel</li>
+	<li>Cufon</li>
+	<li>jQuery Dropdown Menu script</li>
+</ol>
+<br/>
+
+<h2><a name="14"></a>14. CSS scripts in use</h2>
+All Files located in the CSS Folder
+<br/><br/><br/>
+
+<h2><a name="15"></a>15. PSDs bundled with the theme</h2>
+<ol>
+	<li>echoes.PSD</li>
+	<li>carousel-arrows.PSD</li>
+</ol>	
+
+		<p>&nbsp;</p>
+
+
+<div class="box"><h2>Thank you for purchasing Echoes Template. </h2>
+As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section or send a direct email to me via my profile.</div>
+<hr>
+      </div>
+      <div class="span-7 last">
+        <h3>Sections</h3>
+        <ol>
+          <li><a href="#1">About the Echoes Template</a></li>
+          <li><a href="#2">Fonts, icons and plug-ins in use</a></li>
+		  <li><a href="#3">Cufon Fonts</a></li>
+		  <li><a href="#4">Customize Logo</a></li>
+          <li><a href="#5">Setting up the Menu</a></li>
+          <li><a href="#6">The Mainpage Accordion Slides</a></li>
+          <li><a href="#7">The Mainpage Gallery Slideshow</a></li>
+          <li><a href="#8">The Mainpage Featured Slides</a></li>
+		  <li><a href="#9">Portfolio Page</a></li>
+		  <li><a href="#10">LightBox</a></li>
+          <li><a href="#11">Contact Page</a></li>
+          <li><a href="#12">Footer</a></li>
+		  <li><a href="#13">Javascripts in use</a></li>
+		  <li><a href="#14">CSS scripts in use</a></li>
+		  <li><a href="#15">PSDs bundled with the theme</a></li>
+        </ol>
+        <p>&nbsp;</p>
+      </div>
+      <hr>
+      <h2 class="alt">Echoes CSS HTML Help Guide &lt;end&gt;</h2>
+      <hr>
+      <p>This is a Help Guide for Echoes CSS HTML Template</p>
+    </div>
+  </body>
+</html>
