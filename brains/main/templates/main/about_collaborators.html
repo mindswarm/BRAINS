@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Collaborators{% endblock title %}
+
+{% block custom_css %}
+<link href="{{ static_url }}css/slider.page.css" rel="stylesheet" type="text/css">
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/tooltip/thumbpreview.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/loopslider/loopedslider.js"></script>
+<script type="text/javascript">
+$(function () {
+$('#loopedSlider').loopedSlider({
+containerClick: false
+});
+
+});
+</script>
+{% endblock custom_js %}
+
+{% block content %}
+		<div id="categorytitle">
+		About > Member Collaborators
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebartitle">
+				How to become a Collaborator?
+			</div>
+			<div class="sidebartextbox">
+				Use the contact information on the bottom of the screen to get into contact with us. We're looking for people who can supply DNA samples from gifted individuals, or already genotyped / sequenced data of any ability level.
+			</div>
+			<!-- more side -->
+			<div class="sidebartitle">
+				How to volunteer as a participant?
+			</div>
+			<div class="sidebartextbox">
+				If you can demonstrate high g, we are very interested in your participation. Please visit our <a href="volunteer.html">volunteer page.</a>
+			</div>
+			<div class="clear"></div>
+
+			<!-- Sidebar Photos -->
+			<div class="sidebartitle">Prospect Collaborators</div>
+			<div class="sidephotowrap sidephotospace">
+				<div class="sidephotoitem">
+				<ul>
+					<li><a href="#"><img class="sidephotoimage sidephotospace" src="{{ static_url }}images/sidebar/yingrui.jpg" alt="Photo" /></a></li>
+					<li><a href="#"><img class="sidephotoimage sidephotospace" src="{{ static_url }}images/sidebar/herd.jpg" alt="Photo" /></a></li>
+					<li><a href="#"><img class="sidephotoimage" src="{{ static_url }}images/sidebar/lich.jpg" alt="Photo" /></a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+			
+
+		<div id="contents" class="twocolumn">
+		
+		<!-- Slide Gallery Block -->
+		<div class="slideshowgallery">
+			<div id="loopedSlider">	
+				
+				<div class="container">
+					<div class="slides">
+						<!-- Block Start-->
+						<div>
+							<h2>Steven Pinker</h2>
+							
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/main/pinker.jpg" alt="First Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+								Steven Pinker
+								</span>
+									is Harvard College Professor and Johnstone Family Professor of Psychology at Harvard University. He has been named Humanist of the Year, and is listed in Foreign Policy and Prospect magazine's "The World's Top 100 Public Intellectuals" and in Time magazine's "The 100 Most Influential People in the World Today." His research on visual cognition and the psychology of language has won prizes from the National Academy of Sciences, the Royal Institution of Great Britain, and the American Psychological Association. <a href="http://en.wikipedia.org/wiki/Steven_Pinker">more</a>
+
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Robert Plomin</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/main/plomin2.jpg" alt="Second Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Robert Plomin
+								</span>
+									Robert Plomin is Professor of Behavioural Genetics at the MRC Social, Genetic and Developmental Psychiatry (SGDP) Centre at the Institute of Psychiatry, King's College London. His awards include: Fellow, the American Academy of Arts and Sciences (2001); Fellow, The Academy of Medical Sciences (2002); Fellow, American Academy of Political and Social Science (2005); Fellow, British Academy (2005); and lifetime research achievement awards from the Behavior Genetics Association (2002), the Society for Research in Child Development (2005), and the American Psychological Society (2005). During the past 10 years, he has supervised a highly international group of 28 PhD and postdoctoral students. <a href="http://en.wikipedia.org/wiki/Robert_Plomin">more</a>
+							</p>
+						
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Carson Chow</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/main/Chow1a.jpg" alt="Third Image" /></a>
+						
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Carson Chow
+								</span>
+								Dr. Chow received a Bachelor of Applied Science from the University of Toronto and a PhD in theoretical physics from the Massachusetts Institute of Technology in 1992. In 1994, he switched fields to theoretical biology and neuroscience and obtained further postdoctoral training at Boston University. He took a faculty position in the Department of Mathematics at the University of Pittsburgh in 1998, rising to the level of Associate Professor before moving to NIH in 2004. In 1999 he was awarded an Alfred P. Sloan Research Fellowship. His current research focus is in theoretical biological and neuroscience, particularly in areas applicable to the control of feeding and metabolism.<a href="#">more</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Brad Duchaine</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/main/duchaine.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Brad Duchaine
+								</span>
+								Dr. Duchaine holds a PhD from the University of California at Santa Barbara. The winner of the British Neuropsychological Society's Elizabeth Warrington Award, Duchaine's findings have been widely published, in journals including the Proceedings of the National Academy of Sciences, Brain, Current Biology, and Neuron. His work has also received mainstream media coverage, in outlets ranging from The Economist to Wired to Good Morning America. His current research projects include investigations of developmental prosopagnosia in children and the neural architecture of human face processing.<a href="#">more</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Ken Nakayama</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/main/ken.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Ken Nakayama
+								</span>
+								Dr. Ken Nakayama is the Edgar Pierce Professor of Psychology at Harvard University. The Vision Sciences Society recognized his seminal research on all aspects of vision by electing him to serve as its first president. A mild prosopagnosic himself, he is currently studying deficits in face recognition.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Ultrices mauris eu</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/page/pagegallery/image6.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Lorem ipsum dolor sit
+								</span>
+								Facilisi tempor mattis, vehicula feugiat ultrices mauris eu commodo gravida, nunc sodales nibh ornare nunc nulla. A libero lectus vel. Tortor tristique.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Nunc sodales nibh</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/page/pagegallery/image7.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Lorem ipsum dolor sit
+								</span>
+								Facilisi tempor mattis, vehicula feugiat ultrices mauris eu commodo gravida, nunc sodales nibh ornare nunc nulla. A libero lectus vel. Tortor tristique.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>A libero lectus vel</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/page/pagegallery/image8.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Lorem ipsum dolor sit
+								</span>
+								Facilisi tempor mattis, vehicula feugiat ultrices mauris eu commodo gravida, nunc sodales nibh ornare nunc nulla. A libero lectus vel. Tortor tristique.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<h2>Facilisi tempor mattis</h2>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/page/pagegallery/image9.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption">
+								<span class="slidecaptiontitle">
+									Lorem ipsum dolor sit
+								</span>
+								Facilisi tempor mattis, vehicula feugiat ultrices mauris eu commodo gravida, nunc sodales nibh ornare nunc nulla. A libero lectus vel. Tortor tristique.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+					</div>
+
+				</div>
+				
+				<!-- Thumbnails -->
+				<ul class="pagination fullpagination">
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/main/pinker2.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/main/plomin.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/main/Chow1a.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/main/duchaine.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/main/ken.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/page/pagegallery/thumb-portfolio6.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/page/pagegallery/thumb-portfolio7.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/page/pagegallery/thumb-portfolio8.jpg" alt="thumbnail" /></a></li>
+					<li><a href="#"><img class="fade" src="{{ static_url }}images/page/pagegallery/thumb-portfolio9.jpg" alt="thumbnail" /></a></li>
+				</ul>
+
+				<div class="clear"></div>
+
+	
+			</div>
+		</div>
+
+
+
+		</div>
+		
+
+		
+		<div class="clear"></div>
+{% endblock content %}

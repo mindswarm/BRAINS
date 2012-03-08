@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Data Security{% endblock title %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jcarousel.skin.full.css" />
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/jcarousel/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+	scroll: 4,
+	wrap: 'both'
+	});
+});
+
+</script>
+{% endblock custom_js %}
+
+{% block content %}
+		<div id="fullwidth-categorytitle">
+			About > Our Data Security
+		</div>
+		
+		<div id="fulltitle">
+			Will my personal info and genomics data be safe?
+		</div>
+		<div id="fulltitleHighlight">
+		Absolutely yes. We will never release your identity without multiple confirmations of your explicit approval, and our study is designed with particular care for adherence to strict security requirements.
+		</div>
+
+		<div id="contents">
+			<div class="clear"></div>
+			<h4>All incoming data are subject to a battery of default security protocol:</h4>
+			<div class="servicelist">
+				<ul>
+					<li>All data is stored in encrypted form.</li>
+					<li>Genetic and phenotypical data is stored separately from personally identifying information, to reduce the probability and the effect of any security compromise.</li>
+					<li>Correlation between this data and your personally identifying information is only made through masked ID's, the keys to which are stored offline.</li>
+					<li>Etc.-see our <a href='/about/privacy'>privacy statement</a> for more details. We take privacy and data security very seriously.</li>
+				</ul>
+			</div>
+			<a rel="prettyPhoto[gallery]" href="{{ static_url }}images/portfolio/bigimage.jpg">
+			<img class="alignright photofade" src="{{ static_url }}images/pagephoto.jpg" alt="photo" />
+			</a>
+
+			<p>Note that hundreds of thousands of people have been research participants in genome-wide association studies of <a href='http://www.nature.com/nature/journal/v467/n7317/full/nature09410.html'>height, body mass index, diabetes, and other traits</a>. To our knowledge, no individual has been harmed by participation in such a study. The track record does show that widely adopted guidelines for data security and the protection of research participants reduce risk to a minimum.<br><br>
+
+			Also, BGI is not a government institution, and no data will be turned over to any government entity, particularly not the Chinese government. BGI has throughout its history collaborated extensively with researchers based in multiple countries, at all times adhering to standard protocols for data security and the protection of research participants. The most well-known of these collaborations are the Human Genome Project, the International HapMap Project, and the 1000 Genomes Project. One recent international collaboration involving BGI is <a href='http://www.nature.com/ng/journal/v42/n11/full/ng.680.html'>this study examining the exome sequences of 200 Danish nationals</a>. This collaboration included scientists from UC Berkeley, the University of Copenhagen in Denmark, and several other institutions.<br><br>
+
+			Moreover, all members of the BGI Cognitive Genomics Lab with access to personal information entered on this website will abide by the terms of our <a href='/about/privacy'>privacy statement</a>.<br><br>
+
+			If these provisions are not sufficient to put you at ease, please let us know your concerns at privacy@cog-genomics.org. Again: we take privacy and data security very seriously.<br></p>
+			
+			<h2>Schematic of our Data Security Protocol for National Cohorts</h2>
+			<p>For our systematized cohorts gathered on a national basis, we adopt even more mechanized protocol.<br><br>			
+			<!-- Big image with Caption -->
+			<center><a rel="prettyPhoto[gallery]" href="{{ static_url }}images/bigimage.jpg">
+				<img class="bigimage" src="{{ static_url }}images/security.png" alt="bigphoto" />
+			</a></center>
+			<div class="imagecaption">Identity info are divorced from genotype and phenotype data, and then cached in the country of origin, maintained under two independent levels of encryption. The exception is the volunteer sample set, for whom a distinct and encrypted database is maintained online, to allow volunteers to log onto their account and modify data. </div>
+
+		</div>
+		<div class="clear"></div>
+{% endblock content %}

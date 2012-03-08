@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Documents{% endblock title %}
+
+{% block content %}		
+		<div id="fullwidth-categorytitle">
+		Consortium Documents
+		</div>
+
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+				<!-- mportfoliobg will enable the background image which is seen on mouse over -->
+				<!-- Portfolio Block One-->
+				<div class="mportfolio mportfoliobgvideo"><!-- The line for prettyphoto lightbox -->
+					<a href="{{ static_url }}docs/gwasg_proposal_v.3.1.0.pdf">
+						<!-- Class fade will enable fade in out -->
+						<img class="fade" src="{{ static_url }}images/portfolio/pdf3.png" alt="Proposal" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">GWASg Introductory Text</div>
+				<div class="portfoliocontents">Our largely unchanged, original introductory document, describing the Genome-Wide Association Study on g, also known as general intelligence.</div>
+			</div>
+			
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobg"><!-- Portfolio Block Two -->
+					<a href="{{ static_url }}docs/gwasg_methodology_v.1.1.0.pdf">
+						<img class="fade" src="{{ static_url }}images/portfolio/pdf3.png" alt="methodology" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">GWASg Methodology</div>
+				<div class="portfoliocontents">Point by point walkthrough of the planned methodology of analysis - built largely upon the methodological predecessor study by the WTCCC.</div>
+			</div>
+			
+			
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox"></div>
+
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clearlast"></div>
+{% endblock content %}

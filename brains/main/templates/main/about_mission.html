@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Mission{% endblock title %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jcarousel.skin.css" />
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/jcarousel/jquery.jcarousel.pack.js"></script>
+<!-- Initiate carousel with 4 image blocks -->
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+	scroll: 4,
+	wrap: 'both'
+	});
+});
+
+</script>
+{% endblock custom_js %}
+
+{% block content %}
+		<div id="categorytitle">
+			About > Our Mission Statement
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebartitle">
+			Navigate The Statement
+			</div>
+			<div class="sidebaropts">
+				<ul>
+					<li><a href="#ms">Mission Statement</a></li>
+					<li><a href="#open">Focus on Experimental Design</a></li>
+					<li><a href="#priv">Meticulous Privacy</a></li>
+				</ul>
+			</div>
+			
+	
+		</div>
+		
+		<div id="title">
+		Our Goals and Aspirations
+		</div>
+		<div id="titleHighlight">
+		Many great things can come of this endeavor. Here are a few of them which we all agree upon.
+		</div>
+		
+
+		<div id="contents" class="twocolumn">
+			
+		
+			
+			
+			
+		
+		<ol>
+			The human brain is perhaps the most complex object in the known universe, a result of billions of years of evolution and near-infinite iterations of chaotic, stochastic processes.  The cognitive capabilities of even the humblest human are still vastly beyond the power of any manmade artifact.
+
+			<br>  <br>This is our chance to indirectly study the construction blueprint.
+			
+			<h3><a name="open">Focus on Experimental Design</a>:</h3>
+			We engineer our customized hardware to gather data on forward-looking phenotypes, beyond the demand of our immediate tasks, for the sake of future research goals not yet formulated. By doing our best to anticipate and serve the future needs of cognitive genomics researchers to come, and by formatting our data and delivery methods according to the most forward-looking and scalably convenient practices, we invest the labor of today into the unpredictable and unknowable research benefits of tomorrow. 
+			<br><br>If you're interested in studying the genetic basis of cognitive traits, and know of no existing dataset that can help you, ask us if we can help. And do it quickly... before we've gathered all of our data.
+			
+			
+			
+			<h3><a name="priv">Meticulous Privacy</a>:</h3>
+			We adhere to the best practices in privacy protection known in the field. In addition, we'll test our data releases against the best known privacy attacks (e.g. determining whether someone participated in a sensitive study, after surreptitiously collecting their DNA) and adjust them when appropriate.
+
+			<br><br><br><p>Let's add a few more...</p>
+  <br>
+</div>
+		
+
+		
+		<div class="clear"></div>
+{% endblock content %}

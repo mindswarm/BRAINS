@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium News{% endblock title %}
+
+{% block content %}		
+		<div id="fullwidth-categorytitle">
+		Latest Nugget of Brains
+		</div>
+		
+		<div class="subcategorytitle">
+		News and Updates
+		</div>
+
+		<div id="recentportfolio">
+			<div class="recent-portfolioitem recentportfoliobg">
+				<a rel="echoeslightbox" href="{{ static_url }}images/portfolio/bigimage.jpg">
+					<img class="fade" src="{{ static_url }}images/portfolio/recent-portfolio.jpg" alt="Portfolio" />
+				</a>
+			</div>
+			<div class="recent-contentblock">
+				<div class="recent-title">
+					<a href="#">New consortium site up</a>
+				</div>
+				<div class="recent-highlight">
+					As we embark on the next round of fundraising and cohort gathering
+				</div>
+				<div class="recent-description">
+					Everything must be shiny.
+				</div>
+			</div>
+                </div>
+		<div class="clear"></div>
+		
+		<div class="subcategorytitle">
+		Yesterday's Brains
+		</div>
+			
+		<!-- Portfolio Block -->
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+				<!-- mportfoliobg will enable the background image which is seen on mouse over -->
+				<!-- Portfolio Block One-->
+				<div class="mportfolio mportfoliobgimage"><!-- The line for prettyphoto lightbox -->
+					<a rel="echoeslightbox" href="{{ static_url }}images/main/plomin.jpg">
+						<!-- Class fade will enable fade in out -->
+						<img class="fade" src="{{ static_url }}images/main/plomin2.jpg" alt="Portfolio" 	/>
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear"><a href="#">MTA signed with Robert Plomin</a></div>
+				<div class="portfoliocontents">Transfer of DNA samples to begin shortly.<br><br><br><br></div>
+			</div>
+			<div class="mportfoliobox">
+
+				<!-- mportfoliobg will enable the background image which is seen on mouse over -->
+				<!-- Portfolio Block One-->
+				<div class="mportfolio mportfoliobgimage"><!-- The line for prettyphoto lightbox -->
+					<a rel="echoeslightbox" href="{{ static_url }}images/main/sz.jpg">
+						<!-- Class fade will enable fade in out -->
+						<img class="fade" src="{{ static_url }}images/main/sz.jpg" alt="Portfolio" 	/>
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear"><a href="#">Shenzhen govt approves grant</a></div>
+				<div class="portfoliocontents">5M RMB will largely go to new genotyping.<br><br><br><br></div>
+			</div>			
+			
+		</div> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Volunteer{% endblock title %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jcarousel.skin.css" />
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/jcarousel/jquery.jcarousel.pack.js"></script>
+<!-- Initiate carousel with 4 image blocks -->
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+	scroll: 4,
+	wrap: 'both'
+	});
+});
+
+</script>
+{% endblock custom_js %}
+
+{% block content %}
+		<div id="categorytitle">
+			I want to Volunteer!
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebartitle">
+			Already read them?
+			</div>
+			<div class="sidebartextbox">
+			If you want your free genomic data, and think you're smart enough to qualify, go see our <a href='https://www.cog-genomics.org/volunteer/'>volunteer page</a>, and see if you qualify. We're always looking for qualified volunteers, each one increases the statistical power of our GWAS on g.
+			</div>
+			<!-- Photos -->
+			<div class="sidebartitle">Proudly public volunteers</div>
+			<div class="sidephotowrap sidephotospace">
+				<div class="sidephotoitem">
+				<ul>
+					<li><a href="#"><img class="sidephotoimage sidephotospace" src="{{ static_url }}images/portfolio/showcase/hsu.png" alt="Photo" /></a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		
+		<div id="title">
+		Great! Start out by reading our terms
+		</div>
+		<div id="titleHighlight">
+		Our privacy policy, our data security protocol, and our criteria. 
+		</div>
+		
+
+		<div id="contents" class="twocolumn">
+		
+			<div class="clear"></div>
+			
+			
+			<!-- Flexible Button -->
+			
+			<a class="button" href="/about/privacy"><span>Privacy Policy</span></a>  
+			<a class="button" href="/about/security"><span>Data Security</span></a> 
+			<a class="buttonicon" href="https://www.cog-genomics.org/volunteer/"><span><img src="{{ static_url }}images/bookmark.gif" alt="bookmark" /> Criteria for participation</span></a>
+			
+			<div class="clear"></div>
+			<br><h2>High standards</h2>
+			Our crtieria are pretty strict during 2012, we're looking for > +3 sd, which means IQ 145+!
+
+			<br><br>But after 2012, when our expenses for generating data fall a bit, we expect that our criteria will reform to ca. +2.3 sd (IQ 135). So you're still welcome to sign up if you do not at first qualify.
+			<br>
+			<!-- Big image with Caption -->
+			<br><a rel="echoeslightbox" href="{{ static_url }}images/portfolio/bigimage.jpg">
+				<img class="bigimage" src="{{ static_url }}images/page/photo.jpg" alt="bigphoto" />
+			</a>
+			<div class="imagecaption"></div>
+			</div>
+
+
+			<div class="clear"></div>
+{% endblock content %}
