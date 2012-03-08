@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>{% block title %}BRAINS Consortium{% endblock title %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Brains Consortium" content="Brains Consortium" />
+<meta name="keywords" content="Brains, consortium, neurobiology, intelligence, iq, g, psychometrics"/>
+
+<link rel="Shortcut Icon" type="image/ico" href="favicon.ico" />
+
+<link href="{{ static_url }}css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/colorbox.css" />
+<link href="{{ static_url }}css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
+{% block custom_css %}
+{% endblock custom_css %}
+
+<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="{{ static_url }}css/ie6.css" media="screen" />
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="{{ static_url }}css/ie7.css" media="screen" />
+<![endif]-->
+	
+<!-- JQUERY Library -->
+<script type="text/javascript" src="{{ static_url }}js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/fadeinout.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/cufon-yui.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/Museo_Sans_500.font.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/fontconfig.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/menu/ddsmoothmenu.js">
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript" src="{{ static_url }}js/common.js"></script>
+
+
+{% block custom_js %}
+{% endblock custom_js %}
+		
+</head>
+
+<body>
+
+<div id="mainpagecontainer"> <!-- Outside Container -->
+	<div id="mainpage"> 
+	
+		<div id="mainpageheader"> <!-- Header Start -->
+			<div class="clear"></div>
+			
+			<div id="smoothmenu1" class="ddsmoothmenu"><!-- The Menu -->
+				<ul>
+					<!-- Menu Item Start-->
+					<li><a href="/">Sample Cohorts</a>
+						<!-- Dropdown menu -->
+						<ul>
+							<!-- Dropdown Items -->
+							<li><a href="/">Cohorts by Country</a></li>
+							<li><a href="/cohorts">Cohorts in More Detail</a></li>
+						</ul>
+						<!-- Dropdown end -->
+					</li>
+					<!-- Menu Item End -->
+					<li><a href="/about/founders">About</a>
+						<ul>
+							<li><a href="/about/founders">Founding Collaborators</a></li>
+							<li><a href="/about/collaborators">Member Collaborators</a></li>
+							<li><a href="/about/security">Our Data Security</a></li>
+							<li><a href="/about/privacy">Our Privacy Policy</a></li>
+							<li><a href="/about/mission">Our Mission Statement</a></li>							
+							<li><a href="/about/faq">Our FAQ</a></li>							
+							<li><a href="http://www.bgisequence.com/eu/organization/history/">About BGI</a>
+							<ul>
+								<li><a href="http://www.bgisequence.com/eu/organization/history/">BGI History</a></li>
+								<li><a href="http://en.genomics.cn/navigation/show_navigation.action?navigation.id=93.html">BGI Machines</a></li>
+							</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/media/videos">Video and Documents</a>
+						<ul>
+							<li><a href="/media/documents">PDF Documents</a></li>
+							<li><a href="/media/slides">Presentation Files</a></li>
+							<li><a href="/media/videos">Presentation Videos</a></li>
+						</ul>
+					</li>
+					<!-- Menu Single Item -->
+					<li><a href="/news">News</a></li>
+					<li><a href="/volunteer">Volunteer!</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Contact</a></li>
+				</ul>
+				<br style="clear: left" />
+			</div>
+			<!-- End of Menu -->
+						
+			<!-- Logo -->
+			<div id="logo"><a href="/"><img src="{{ static_url }}images/logo.png" alt="logo" /></a></div>
+		</div> <!-- Close Header -->
+
+                {% block content %}
+                {% endblock content %}
+	</div> <!-- Close Mainpage -->
+	
+	<!-- Footer start -->
+	<div id="footer">
+		<div id="footerwrap">
+			<!-- Footer List One -->
+			<div class="footerminibox">
+				<div class="footertitle">Genomics Lab</div>
+				<div class="footerposts">
+				<ul>
+					<li><a href="mailto:contact@cog-genomics.org">Rui Yang</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Steve Hsu</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Bowen Zhao</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Laurent Melchior Tellier</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Chris Chang</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">James Lee</a></li>
+				</ul>
+				</div>
+			</div>
+			<!-- Footer List Two -->
+			<div class="footerminibox">
+				<div class="footertitle">Consortium FAQ</div>
+				<div class="footerposts">
+				<ul>
+					<li><a href="faq.html#whatisbrains">BRAINS - an acronym?</a></li>
+					<li><a href="mission.html">Mission statement?</a></li>
+					<li><a href="faq.html#origins">Origins?</a></li>
+					<li><a href="news.html">Funding?</a></li>
+					<li><a href="mailto:contact@cog-genomics.org">Contact?</a></li>
+					<li><a href="http://cog-genomics.org">Lab Website?</a></li>
+				</ul>
+				</div>
+			</div>
+			<!-- Footer with Social Icons -->
+			<div class="footerminibox">
+				<div class="footertitle">Social</div>
+				<div class="footersocial">
+				<ul>
+					<li><a href="http://www.facebook.com/hsu.steve"><img src="{{ static_url }}images/icons/facebook_16.png" alt="facebook" /> Facebook</a></li>
+					<li><a href="http://twitter.com/hsu_steve"><img src="{{ static_url }}images/icons/twitter_16.png" alt="twitter" /> Twitter</a></li>
+					<li><a href="http://infoproc.blogspot.com/"><img src="{{ static_url }}images/icons/blogger_logo.png" alt="flickr" /> Blogger</a></li>
+					<li><a href="http://www.linkedin.com/in/stevehsu"><img src="{{ static_url }}images/icons/linkedin_16.png" alt="linkedin" /> Linkedin</a></li>
+					<li><a href="http://www.tumblr.com/tagged/james-lee"><img src="{{ static_url }}images/icons/tumblr_16.png" alt="facebook" /> Tumblr</a></li>
+					<li><a href="http://infoproc.blogspot.com/feeds/posts/default?alt=rss"><img src="{{ static_url }}images/icons/rss.png" alt="mixx" /> RSS</a></li>
+				</ul>
+				</div>
+			</div>
+			<!-- Footer with About and Image -->
+			<div class="footerbox footerspace">
+				<div class="footertitle">Our Mother Institute</div>
+				<div class="footertext">
+					<div class="aboutimage">
+						<a href="#"><img src="{{ static_url }}images/footer/bgi2.jpg" alt="photo" /></a>
+					</div>
+				Beijing Genomics Institute's sequencing output is set to shortly surpass the equivalent of more than 15,000 human genomes per year. It is a titan of the field. <a href="http://en.wikipedia.org/wiki/Beijing_Genomics_Institute#cite_note-0">more</a>
+				</div>
+			</div>
+			<!-- Footer with Address -->
+			<div class="footerbox footerspace">
+				<div class="footertitle">Contact Information</div>
+					<div class="footeraddress">
+						<ul>							
+							<li>CHINA </li>
+							<li>Guangdong sheng, Shenzhèn shì </li>
+							<li>518000 yántián qu, dà méi sha </li>
+							<li>xin hai qiélán lán yùn </li>
+							<li>gé D zuò 1102 shì</li>
+							<li>BRAINS Consortium</li>
+							<li>Tel1: +86 13670051034</li>
+							<li>Tel2: +852 65663322</li>
+							<li><a href="mailto:contact@cog-genomics.org">contact@cog-genomics.org</a></li>
+							<li>Lab Site: <a href="https://www.cog-genomics.org">www.cog-genomics.org</a></li>
+						</ul>
+					</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- Footer Blocks End -->
+	<!-- Footer with Copyright and other info -->
+	<div id="footerbarwrap">
+	<ul>
+
+	<li>Copyright © 2012, all rights reserved.</li>
+		<li>Have a look at Steve Hsu's blog, where the Consortium's projects are often being discussed. It's our defacto forum: <a href="http://infoproc.blogspot.com">here</a></li>
+	</ul>
+	</div>
+	<!-- Footer End -->
+</div> <!-- Close Container -->
+<!-- Cufon Activation mainly for IE -->
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

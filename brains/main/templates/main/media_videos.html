@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Videos{% endblock title %}
+
+{% block content %}		
+		<div id="fullwidth-categorytitle">
+		Consortium Videos and Presentations
+		</div>
+
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+				<!-- mportfoliobg will enable the background image which is seen on mouse over -->
+				<!-- Portfolio Block One-->
+				<div class="mportfolio mportfoliobgvideo"><!-- The line for prettyphoto lightbox -->
+					<a href="{{ static_url }}videos/Swedes.mp4">
+						<!-- Class fade will enable fade in out -->
+						<img class="fade" src="{{ static_url }}images/portfolio/portfolio1.jpg" alt="Proposal" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">Meatballs</div>
+				<div class="portfoliocontents">Spelled 'Meatbølls'. Yes, ø. DEAL WITH IT.</div>
+			</div>
+			
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobg"><!-- Portfolio Block Two -->
+					<a href="{{ static_url }}videos/dogtease.mp4">
+						<img class="fade" src="{{ static_url }}images/portfolio/portfolio2.jpg" alt="methodology" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">Bacon</div>
+				<div class="portfoliocontents">Spelled conventionally.</div>
+			</div>
+		</div><br><br><br><br><br><br><br><br><br><br><br>
+
+
+			<!-- Big Saying with Button -->
+		<div class="mbigsaying">
+			<div class="mbigbutton">
+			<span><a href="http://saveyoutube.com/embed/62jZENi1ed8">Download</a></span>
+			</div>
+			<div class="mbigtextwrap">
+				<div class="mbigtitle">
+				Watch Steves big talk at Google Tech 
+				</div>
+				<div class="mbigdesc">
+				Or download it!
+				</div><br><br><br>
+			</div>
+		</div>
+
+			<center><iframe width="560" height="315" src="http://www.youtube.com/embed/62jZENi1ed8" frameborder="0" allowfullscreen></iframe></center>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clearlast"></div>
+{% endblock content %}

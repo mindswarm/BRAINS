@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium FAQ{% endblock title %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="{{ static_url }}css/jcarousel.skin.css" />
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/jcarousel/jquery.jcarousel.pack.js"></script>
+<!-- Initiate carousel with 4 image blocks -->
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+	scroll: 4,
+	wrap: 'both'
+	});
+});
+</script>
+{% endblock custom_js %}
+
+{% block content %}
+		<div id="categorytitle">
+			About > Our FAQ
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebartitle">
+			Navigate to a FAQ Question
+			</div>
+			<div class="sidebaropts">
+				<ul>
+					<li><a href="#whatisg">What is <em>g</em>?</a></li>
+					<li><a href="#whyimp">Why is <em>g</em> important?</a></li>
+					<li><a href="#howprec">How precisely can <em>g</em> be defined?</a></li>
+					<li><a href="#howher">How heritable is <em>g</em>?</a></li>
+					<li><a href="#whyvol">Why should I volunteer?</a></li>	
+					<li><a href="#willsafe">Will my personal info and genomic data be safe?</a></li>	
+					<li><a href="#howqual">How does one qualify for the <em>g</em> study?</a></li>	
+					<li><a href="#aremath">Are your screening criteria biased toward math ability?</a></li>					
+					<li><a href="#whatispros">What does BRAINS stand for? Is it an acronym?</a></li>					
+					<li><a href="#origins">How did this originate? Do you guys ever meet up?</a></li>	
+					<li><a href="#whatisbrains">What is prosopagnosia?</a></li>					
+					<li><a href="#otherq">I have another question...</a></li>					
+				</ul>
+			</div>
+			
+	
+		</div>
+		
+		<div id="title">
+		FAQ
+		</div>
+		<div id="titleHighlight">
+		These are quick, informal answers to frequently asked questions.  For more detailed information with references to the scientific literature, see <a href="/media/documents">our formal research proposal</a>.  You may also find our <a href="/media/slides">talk slides</a> and our <a href='/media/videos'>video presentations</a> to be informative.
+		</div>
+		
+
+		<div id="contents" class="twocolumn">
+			
+			<!-- Carousel End -->
+			
+			
+			
+		
+			<ol>
+  <br>
+  <h3><a name="whatisg">What is <em>g</em></a>?</h3>
+  <p>No one knows precisely what intelligence is, and even experts disagree as to how it should be defined. However, it has been known for over a century that performance on different cognitive tests is positively correlated: for example, someone who is good at math puzzles is also more likely to have an above average vocabulary. Given a battery of tests and their correlation matrix, one can use probability theory to define a single parameter that, in a sense, optimally compresses the information from administering them all.</p>
+  <p>In practice, a wide range of intuitively sensible test batteries and functions of their score vectors yield very similar estimates of this parameter. As a result, psychologists consider these functions of test batteries to all be reasonable estimators of a parameter called the General Factor of Intelligence, or <em>g</em> for short.</p>
+  <br>
+  <h3><a name="whyimp">Why is <em>g</em> important?</a></h3>
+  <p>The human brain is extremely complex, a unique product of millions of
+years of evolution.  Our genetic code is the "blueprint" from which this object
+is constructed.  The genetics of cognition inform subjects as diverse as
+psychology, anthropology, neuroscience and molecular biology.</p>
+  <p>In addition, <em>g</em> has significant correlations with health outcomes.
+It has been demonstrated to be amongst the very best predictors of <a href="http://www.sciencedaily.com/releases/2010/02/100209200754.htm">cardiovascular disease</a>, <a href="http://www.cbsnews.com/stories/2005/07/08/health/webmd/main707645.shtml">resistance to dementia</a>, <a href="http://jech.bmj.com/content/57/6/464.extract">ability to quit smoking</a>, and even <a href="http://www.bmj.com/content/322/7290/819.abstract">simple longevity</a>. The brain is an organ like any other, and it affects human health and well-being profoundly.</p>
+  <br>
+  <h3><a name="howprec">How precisely can <em>g</em> be defined?</a></h3>
+  <p>Note that the definition of <em>g</em> is periodically refined.  However, it is undoubtedly a robust phenomenon, and a promising metric upon which to
+base our study. Some important properties of <em>g</em> are:</p>
+  <ol>
+    <li>stability (scores tend not to vary significantly after
+adolescence),</li>
+    <li>heritability (twin studies and adoption studies powerfully suggest that
+much of the variance in <em>g</em> is dependant upon genetics), and</li>
+    <li>predictive power (<em>g</em> scores are correlated with academic and
+job performance, income, longevity, etc., even after controlling for other
+variables such as social class, ethnic background, and resource access).</li>
+  </ol>
+  <br>
+  <h3><a href='howher'>How heritable is <em>g</em>?</a></h3>
+  <p>Twin and adoption studies suggest that at least 50%, and perhaps as much
+as 80%, of the variance in <em>g</em> scores is due to genetic causes.  Note
+that heritability is defined over a specific distribution of environments.  For
+the 50-80% range mentioned above, the environments in question are those found
+in families typically allowed to adopt foster children.  Severe environmental
+deprivation may reduce heritability, as with most traits, but the predictive value upon <em>g</em> of genetics has long been <a href="https://iris.ucl.ac.uk/research/browse/show-publication?pub_id=332626&source_id=2">well established</a>.</p>
+  <br>
+  <h3><a name="whyvol">Why should I volunteer?</a></h3>
+  <p>By volunteering, you are helping to push out the boundaries of scientific
+knowledge.  If you are a high <em>g</em> individual, you are the recipient of a
+special gift.  By studying your DNA, we may be able to determine which loci in
+the human genome affect cognitive development, and by extension, human health
+and well-being.</p>
+  <br>
+  <h3><a name="willsafe">Will my personal info and genomic data be safe?</a></h3>
+  <p><em>Absolutely yes</em>.  Please read our <a href='/about/security'>security protocol</a> and <a href='/about/privacy'>privacy statement</a>.  
+  <h3><a name='qualify'>How does one qualify for the <em>g</em> study?</a></h3>
+  <p>We currently seek participants with high cognitive ability.  You can
+qualify for the study if you have obtained a high SAT/ACT/GRE score, or have
+performed well in academic competitions such as the Math, Physics, or
+Informatics Olympiads, the William Lowell Putnam Mathematical Competition,
+TopCoder, etc.  You may also qualify via exceptional academic credentials or
+technical accomplishments. <a href="/volunteer"><b>Click here to volunteer.</b></a></p>
+  <br>
+  <h3><a name='aremath'>Are your screening criteria biased toward math ability?</a></h3>
+  <p>Yes.  Our study is international, and "mathematical ability" is the
+largest coherent component of <em>g</em> for which (i) enough people have
+already been tested and (ii) cross-country comparisons are practical. Please keep in mind that we must study people from a variety of countries and
+cultures.</p>
+  <p>We do not claim that our study design is capable of identifying all
+<em>g</em>-associated alleles given enough participants, let alone all loci
+linked with other components of intelligence; or that <em>g</em> is a perfect
+measurement of intelligence, brain health, etc. We simply wish to start
+the process of discovery, and believe that this is a good place to begin. Keep
+in mind the difficulty of this line of inquiry: previous intelligence GWAS,
+even while confirming additive <em>g</em> heritability of at least 0.45 (see <a href="http://www.nature.com/mp/journal/vaop/ncurrent/full/mp201185a.html">Davies et al.'s recent paper</a>), have not been successful in finding
+replicable associations.</p>
+  <p>It is reasonable to interpret the study of <em>g</em> as being of
+something narrower than "intelligence", yet with important correlations for
+human health and well-being nonetheless.</p>
+  <br>
+  <h3><a name='whatisbrains'>What does BRAINS stand for? Is it an acronym?</a></h3>
+  <p>BGI Research Association for Intelligence and Neurobiological Studies.</p>
+  <br>
+  <h3><a name='origins'>How did this project originate? Do you guys ever meet up?</a></h3>
+  <p>It started off with the 2 Chinese members of our team, who were already in BGI, and the rest of us quickly jumped on board out of sheer interest. Most of us are American, actually.</p>
+  <p>Yes, we have all met physically, once.</p>
+  			<center><a rel="prettyPhoto[gallery]" href="{{ static_url }}images/main/team.jpg">
+				<img class="bigimage" src="{{ static_url }}images/main/team.jpg" alt="bigphoto" />
+			</a></center>
+  <br>
+
+  <h3><a name='whatispros'>What is prosopagnosia?</a></h3>
+  <p>Prosopagnosia, also called face blindness, is an impairment in the
+recognition of faces.  It is often accompanied by other types of recognition
+impairments (place recognition, car recognition, facial expression of emotion,
+etc.) though sometimes it appears to be restricted to facial identity.  Not
+surprisingly, prosopagnosia can create serious social problems.
+Prosopagnosics often have difficulty recognizing family members, close friends,
+and even themselves.  They often use alternative routes to recognition, but
+these routes are not as effective as recognition via the face.</p>
+  <br>
+  <h3><a name='otherq'>I have another question...</a></h3>
+  <p>First, check if our <a href="/media/documents">documents</a> answer it.  If not, feel free to ask us
+at <a href="mailto:contact@cog-genomics.org">contact@cog-genomics.org</a>; we'll try to reply in a reasonable
+amount of time, and especially good questions may be added to this page.</p>
+  <br>
+</div>
+		
+
+		
+		<div class="clear"></div>
+{% endblock content %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Slides{% endblock title %}
+
+{% block content %}		
+		<div id="fullwidth-categorytitle">
+		Consortium Slides
+		</div>
+
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+				<!-- mportfoliobg will enable the background image which is seen on mouse over -->
+				<!-- Portfolio Block One-->
+				<div class="mportfolio mportfoliobgvideo"><!-- The line for prettyphoto lightbox -->
+					<a href="{{ static_url }}docs/slidesGoogle.pdf">
+						<!-- Class fade will enable fade in out -->
+						<img class="fade" src="{{ static_url }}images/portfolio/pdf3.png" alt="SteveSlides" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">Steves Google Slides</div>
+				<div class="portfoliocontents">The slides from Steve Hsu's famous talk at Google.</div>
+			</div>
+			
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobg"><!-- Portfolio Block Two -->
+					<a href="{{ static_url }}docs/BGI-CGU AmalgamationSansCH v1.1.0.key">
+						<img class="fade" src="{{ static_url }}images/portfolio/key.jpg" alt="methodology" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">Ren Da Fu Zhong talk</div>
+				<div class="portfoliocontents">English version of the presentation prepared for the talk at Elite Beijing university "Ren Da Fu Zhong" by Rui, Chris, and Laurent.</div>
+			</div>
+			<div class="mportfoliobox mportfoliospace">
+
+				<div class="mportfolio mportfoliobg"><!-- Portfolio Block Two -->
+					<a href="{{ static_url }}docs/BGI-CGU RDFZ Master Mandarin v1.2.0.key">
+						<img class="fade" src="{{ static_url }}images/portfolio/key.jpg" alt="methodology" />
+					</a>
+				</div>
+				<!-- Contents -->
+				<div class="portfoliotitle clear">Ren Da Fu Zhong talk</div>
+				<div class="portfoliocontents">Mandarin version of the presentation prepared for the talk at Elite Beijing university "Ren Da Fu Zhong" by Rui, Chris, and Laurent.</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="categoryportfoliowrap">
+			<div class="mportfoliobox">
+
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clearlast"></div>		</div>
+{% endblock content %}

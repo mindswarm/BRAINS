@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %}BRAINS Consortium Cohorts{% endblock title %}
+
+{% block custom_css %}
+<link href="{{ static_url }}css/slider.css" rel="stylesheet" type="text/css" />
+{% endblock custom_css %}
+
+{% block custom_js %}
+<script type="text/javascript" src="{{ static_url }}js/loopslider/loopedslider.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/loopslider/loopslider-custom.js"></script>
+<script type="text/javascript" src="{{ static_url }}js/jquery.preload.js"></script>
+{% endblock custom_js %}
+		
+{% block content %}
+		<!-- Featured Block -->
+		<div class="slideshowgallery">
+			<div id="loopedSlider">	
+				<div class="container">
+					<div class="slides">
+						<!-- Block Start -->
+						<div>
+							<!-- Image -->
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/globe.png" alt="First Image" /></a>
+							<!-- Caption Title and Description-->
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Volunteer Sample Set</a>
+								</span>
+								<a href="#">Via word of mouth, popular interest, and the promise of free genotyping data, volunteers are continually rallying to offer their saliva samples for the project. 
+								Currently, ca. 600+ gifted adults of mixed ethnicity have volunteered, and we hope to make 1000.
+								<br><br>The criterion is currently +3 sd IQ, but we will relax this requirement to +2.3sd, and later +2sd, as the costs of generating data fall; so volunteers can sign up already for future iterations of participation and free genotyping.
+								<br><br>We expect to carry out our first round of genotyping in the summer of 2012, but really to continue gathering this valuable volunteer sample set for as long as the Consortium continues to grow and flourish.
+								</a>
+							</p>
+							
+						</div>
+						<div>
+							<!-- Image -->
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image1.jpg" alt="First Image" /></a>
+							<!-- Caption Title and Description-->
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Danish Military Conscript Topscorers</a>
+								</span>
+								<a href="#">The Danish Data Authority has authorized us to gather DNA samples from the top scorers on the Danish Conscription IQ test. The top scorers achieve the maximum score on the BP test of +2 sd, a result which is continually normed to negate the Flynn effect. 
+								<br><br>Virtually every young man in Denmark is put through this process shortly after their 18th birthday, resulting in 35000+ new records every year. And since military records stretch back before the 60's, we expect a total samplespace of ca. 50*35000 = 1.750.000 Danes, and a gifted subset of ca. 37.000 topscorers. We expect to recruit at least 2000+ gifted adults above +2 sd IQ.
+								<br><br>The gathering of this cohort is expected to commence in the spring of 2012, and to be finished in the fall of 2012.
+								</a>
+							</p>
+							
+						</div>
+						<div>
+							<!-- Image -->
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image1.jpg" alt="First Image" /></a>
+							<!-- Caption Title and Description-->
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Danish Military Conscript Controls</a>
+								</span>
+								<a href="#">Via the same method, and under the same arrangement with the Danish Data Authority, we will gather a number of Danish controls, if the number of conrols we acquire via other means needs to be supplemented. Since these exist in much greater number, attaining sufficient numbers should be close to guaranteed. These controls may be 0sd or -1sd, depending on developments.<br><br>The gathering of this cohort is expected to commence in the summer of 2012, and to be finished in the winter of 2012.</a></a>
+							</p>
+							
+						</div>						
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image2.jpg" alt="Second Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Chinese Olympiad Topscorers</a>
+								</span>
+								<a href="#">Chinese high school Olympiad finalists are highly select, and expected to be above +2.7sd. The recruitment of this sample set is very complicated in the local legal and cultural environment, but we have our first volunteers already.<br><br>However, this sample set remains the most convoluted to gain access to, and we expect to begin gathering it in earnest no earlier than early 2013.</a>
+							</p>
+						
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image3.jpg" alt="Third Image" /></a>
+						
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Wellcome Trust Case Control Consortium</a>
+								</span>
+								<a href="#">The Wellcome Trust Case Control Consortium (WTCCC) was formed with a view to exploring the utility, design and analyses of GWA studies such as ours, and we're currently undergoing the bureacracy trial of admission. The WTCCC is based upon gathering (for our purposes) an essentially random subset of the British Samplespace, and can be expected to be normed around 0sd.<br><br>It is difficult to predict the WTCCC bureaucracy, but the samples are expected to be at hand no later than winter 2012.</a>
+							</p>							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image4.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Robert Plomins TIP child cohort</a>
+								</span>
+								<a href="#">These are the smartest cohort of the study, tested at age 12 to have IQ's at ca. +4 sd. The correlation between 12 year old IQ and adult IQ is only 0.71, and will tend to regress to the mean, so their adult IQ's (our desired phenotype) will be under +3.5 sd. This is nonetheless the best scoring sample set. <br><br>The Plomin sample set is expected to be genotyped by the early summer of 2012.</a>
+							</p>
+							
+						</div>
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image4.jpg" alt="Fourth Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Wisconsin Longitudinal Study</a>
+								</span>
+								<a href="#">Similar to the WTCCC, the WLS is an assembly of essentially random high-schoolers from Wisconsin, all with IQ data. The sampleset norm may be slightly above 0sd, due to the children alll being in school, but we can compensate for this by selecting for known IQ scores.
+								<br><br>The WLS sample set is timelined to be collected in Wisconsin by early fall of 2012.</a>
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image5.jpg" alt="Fifth Image" /></a>
+							
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Zimrans Control Group</a>
+								</span>
+								<a href="#">Our good friend Ari Zimran is currently working out an IRB for a control set, normed around 0 sd.</a>
+								<br><br>The Zimran sample set is currently untimelined, but hoped to be ready for collection by fall 2012.
+							</p>
+							
+						</div>
+						<!-- Block End -->
+						<!-- Block Start -->
+						<div>
+						
+							<a href="#"><img class="loopslide" src="{{ static_url }}images/accordion/image6.jpg" alt="Sixth Image" /></a>
+							
+
+							<p class="slidecaption captionfade">
+								<span class="slidecaptiontitle">
+									<a href="#">Sweden</a>
+								</span>
+								<a href="#">Birdi birdi birdi BORK BORK</a>
+							</p>
+							
+						</div>
+					</div>
+
+				</div>
+				<!-- Featured Arrows -->
+				<a href="#" class="previous"><img src="{{ static_url }}images/slider/previous.png" alt="Previous" /></a>
+				<a href="#" class="next"><img src="{{ static_url }}images/slider/next.png" alt="Next" /></a>
+				<!-- Featured Pagination -->
+				<!-- 
+				To equip more than Six pagination points Edit the slider.css in the CSS folder
+				Locate ul.pagination
+				And increase the pixel width to center the pagination with the image
+				-->
+	
+			</div>
+		</div>
+
+
+		<div class="clear"></div>
+		<!-- End of Featured Block -->
+
+
+		<!-- Big Saying with Button -->
+		<div class="mbigsaying">
+			<div class="mbigbutton">
+			<span><a href="{{ static_url }}videos/Swedes.mp4">Download</a></span>
+			</div>
+			<div class="mbigtextwrap">
+				<div class="mbigtitle">
+				Our first conversation with our prospect Swedish cohort organizers!
+				</div>
+				<div class="mbigdesc">
+				It was nice, but plagued by audio difficulties. Please see if you can help us to decipher it:
+				</div>
+			</div>
+		</div>
+		<!-- Big Saying Ends -->
+		
+		<div class="clear"></div>
+			
+		<!-- Another Big saying with Arrow -->
+		<div class="mbigsaying">
+			<div class="mbigmorewrap">
+				<div class="mbigtitle">
+				Read more in our collaborator section. <a href="/about/collaborators" class="morearrow"></a>
+				</div>
+			<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+{% endblock content %}
